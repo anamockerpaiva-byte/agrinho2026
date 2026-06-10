@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agro Forte, Futuro Sustentável</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f4f7f5;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Menu de Navegação */
+        header {
+            background-color: #1b4332;
+            color: white;
+            padding: 20px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #52b788;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #52b788;
+        }
+
+        /* Seção Principal */
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1500937386664-56d1dfef3854?auto=format&fit=crop&w=1920&q=80') no-repeat center center/cover;
+            height: 60vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            padding: 0 20px;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 15px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+        }
+
+        .hero p {
+            font-size: 20px;
+            margin-bottom: 25px;
+            max-width: 600px;
+        }
+
+        .btn {
+            background-color: #52b788;
+            color: #1b4332;
+            padding: 12px 30px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 25px;
+            transition: background 0.3s, transform 0.2s;
+        }
+
+        .btn:hover {
+            background-color: #40916c;
+            color: white;
+            transform: scale(1.05);
+        }
+
+        /* Seção de Conteúdo / Pilares */
+        .container {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 0 20px;
+            text-align: center;
+        }
+
+        .container h2 {
+            font-size: 32px;
+            color: #1b4332;
+            margin-bottom: 40px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+            border-top: 5px solid #52b788;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card h3 {
+            color: #1b4332;
+            margin-bottom: 15px;
+            font-size: 22px;
+        }
+
+        /* Rodapé */
+        footer {
+            background-color: #1b4332;
+            color: #b7e4c7;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">AgroSustentável</div>
+        <nav>
+            <a href="#">Início</a>
+            <a href="#">Pilares</a>
+            <a href="#">Tecnologias</a>
+            <a href="#">Sobre</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Agro Forte, Futuro Sustentável</h1>
+        <p>O equilíbrio perfeito entre a alta produtividade no campo e a preservação do meio ambiente.</p>
+        <a href="#" class="btn">Conheça Nossas Práticas</a>
+    </section>
+
+    <main class="container">
+        <h2>Pilares do Equilíbrio</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Produtividade Eficiente</h3>
+                <p>Produzir mais alimentos em menos espaço utilizando biotecnologia, análise de dados e maquinários inteligentes que evitam o desperdício.</p>
+            </div>
+            <div class="card">
+                <h3>Preservação Ativa</h3>
+                <p>Cuidado real com o solo e a água. Práticas como o plantio direto e a rotação de culturas mantêm a terra fértil sem esgotar os recursos.</p>
+            </div>
+            <div class="card">
+                <h3>Energia Limpa</h3>
+                <p>O campo como gerador de sustentabilidade: uso de energia solar para irrigação e reaproveitamento de resíduos orgânicos para gerar biomassa.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 AgroSustentável - Aliança entre Produção e Meio Ambiente.</p>
+    </footer>
+
+</body>
+</html>
